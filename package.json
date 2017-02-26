@@ -3,6 +3,7 @@
   "author": "Giovanny Piovesan",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://giovannywrp.github.io/react-redux-showcase",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
@@ -32,6 +33,7 @@
     "file-loader": "0.9.0",
     "filesize": "3.3.0",
     "fs-extra": "0.30.0",
+    "gh-pages": "^0.12.0",
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
@@ -52,6 +54,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "babel-preset-stage-1": "^6.22.0",
     "eslint": "^3.16.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
@@ -67,7 +70,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -95,7 +99,10 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "react",
+      "es2015",
+      "stage-1"
     ]
   },
   "eslintConfig": {
