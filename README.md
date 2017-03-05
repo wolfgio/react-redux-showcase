@@ -1,7 +1,7 @@
 # react-redux-showcase
 A simple react-redux app showing the basic about Redux with React app.
 
-<a href='https://giovannywrp.github.io/react-redux-showcase/'>live demo</a>
+<a href='https://wolfgio.github.io/react-redux-showcase/'>live demo</a>
 
 ## Getting started
 Run the following command<br>
